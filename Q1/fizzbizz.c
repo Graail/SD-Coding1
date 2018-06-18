@@ -12,6 +12,23 @@ void fizzBizz(int start, int end)
     printf("\nFizzBizz::START: %d, %d\n", start, end);
     
     // TODO: Your code here!
+
+    while (start < end){
+    
+        if ((start%3 || start%5) == 0){
+            printf ("FizzBizz\n");
+            
+        } else if ((start%3) == 0){
+            printf ("Fizz\n");
+            
+        }else if ((start%5) == 0){
+            printf ("Bizz\n");
+            
+        }else {
+            printf("%d\n", start);
+        }    
+        start = start + 1;
+    }    
     // Ex.: printf("Fizz\n");
     
     printf("\nFizzBizz::END\n");
@@ -19,7 +36,8 @@ void fizzBizz(int start, int end)
 
 int main()
 {
-    printf("\n### CESAR School :: Sistemas Digitais :: Coding1 :: FizzBizz ###\n");
+    printf ("\n### CESAR School :: Sistemas Digitais :: Coding1 :: FizzBizz ###\n");
+    
     
     fizzBizz(1, 6);
     fizzBizz(1, 16);
